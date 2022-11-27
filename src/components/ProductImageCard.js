@@ -12,7 +12,7 @@ const ProductImageCard = ({ img, subImg, detailPage }) => {
         width: "100%",
         maxWidth: "570px",
         "@media screen and (max-height: 650px)": {
-          height: "450px",
+          height: "240px",
         },
       }}
     >
@@ -24,6 +24,9 @@ const ProductImageCard = ({ img, subImg, detailPage }) => {
           width: detailPage ? "100%" : "299px",
           height: detailPage ? "100%" : "247px",
           borderRadius: detailPage ? "0 0 0 40%" : "20px 20px 20px 40%",
+          "@media screen and (max-height: 650px)": {
+            height: "240px",
+          },
         }}
       />
       <Box

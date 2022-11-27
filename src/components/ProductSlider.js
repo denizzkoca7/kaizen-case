@@ -34,7 +34,7 @@ const ProductSlider = ({ products }) => {
                 height: "auto",
               }}
             >
-              <Box p={1} mb={35} height="calc(100% - 35px)">
+              <Box p={1} mb={35}>
                 <ProductCard product={product} />
               </Box>
             </SwiperSlide>
