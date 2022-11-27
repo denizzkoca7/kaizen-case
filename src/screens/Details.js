@@ -13,7 +13,6 @@ const Details = () => {
   return (
     <Flex
       sx={{
-        position: "relative",
         width: ["100%", "74%", "80%", "80%"],
         maxWidth: "1300px",
         margin: "auto",
@@ -24,7 +23,8 @@ const Details = () => {
         padding: [0, "20px", "20px", "20px"],
         height: [null, null, "500px", "500px"],
         backgroundColor: "#eceeef",
-        pb: ["100px", "50px", "0", "0"],
+        pb: ["100px", "100px", "0", "0"],
+        position: "relative",
       }}
     >
       <ProductImageCard img={product.img} subImg={product.subImg} detailPage />
@@ -33,6 +33,9 @@ const Details = () => {
         width={["100%", "100%", "80%", "50%"]}
         height={["100%", "100%", "100%", "100%"]}
         overflowX="auto"
+        sx={{
+          position: "relative",
+        }}
       >
         <Text
           fontSize={["26px", "26px", "20px"]}
@@ -50,12 +53,13 @@ const Details = () => {
         >
           {product.detailText} {product.detailText}
         </Text>
+
         <Button
           sx={{
-            position: "fixed",
+            position: ["fixed", "fixed", "sticky", "sticky"],
             bottom: "20px",
             height: "56px",
-            width: "90%",
+            width: ["91%", "64%", "100%", "100%"],
             borderRadius: "20px",
             backgroundColor: product.color,
             color: "white",
