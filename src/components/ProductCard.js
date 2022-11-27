@@ -43,6 +43,7 @@ const ProductCard = ({ product }) => {
             fontSize="14px"
             fontWeight="700"
             lineHeight="20px"
+            color="#1D1E1C"
           >
             {product.desc}
           </Text>
