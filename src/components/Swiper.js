@@ -33,7 +33,9 @@ export const StyledSwiper = styled(Swiper)`
       left: 0;
       text-align: center;
       width: 100% !important;
-      z-index: 10;
+      @media (max-height: 670px) {
+        display: none;
+      }
     }
   }
 

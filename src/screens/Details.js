@@ -24,6 +24,7 @@ const Details = () => {
         padding: [0, "20px", "20px", "20px"],
         height: [null, null, "500px", "500px"],
         backgroundColor: "#eceeef",
+        pb: ["100px", "50px", "0", "0"],
       }}
     >
       <ProductImageCard img={product.img} subImg={product.subImg} detailPage />
@@ -51,11 +52,10 @@ const Details = () => {
         </Text>
         <Button
           sx={{
-            position: "sticky",
+            position: "fixed",
             bottom: "20px",
-            right: "0",
             height: "56px",
-            width: "100%",
+            width: "90%",
             borderRadius: "20px",
             backgroundColor: product.color,
             color: "white",
