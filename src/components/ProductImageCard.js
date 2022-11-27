@@ -11,8 +11,6 @@ const ProductImageCard = ({ img, subImg, detailPage }) => {
         position: "relative",
         width: "100%",
         maxWidth: "570px",
-        height: "100%",
-        // height 650px altında olursa 100% olacak
         "@media screen and (max-height: 650px)": {
           height: "450px",
         },
