@@ -26,6 +26,8 @@ open project in local server
 
 ```bash
 
-npm start
+npm run start
 
 ```
+
+for demo : https://kaizen-casee-study.netlify.app/

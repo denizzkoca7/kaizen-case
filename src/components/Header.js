@@ -2,16 +2,24 @@ import React from "react";
 import { Box, Button, Flex } from "rebass/styled-components";
 import logo from "../images/logo.svg";
 import profile from "../icons/profile-icon.svg";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [login, setLogin] = React.useState(false);
+  const navigate = useNavigate();
   return (
     <Flex
       alignItems="center"
       justifyContent="space-between"
       padding="40px 15px 20px 15px"
     >
-      <Box as="img" src={logo} alt="logo" sx={{ width: "100px" }} />
+      <Box
+        as="img"
+        src={logo}
+        alt="logo"
+        sx={{ width: "100px" }}
+        onClick={() => navigate("/")}
+      />
       <Flex>
         {!login && (
           <Button
